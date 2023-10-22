@@ -1,0 +1,127 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*
+{
+    font-family: 'Poppins', sans-serif;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body
+{
+    background-color: black;
+    font-size: 10px;
+    
+}
+.container-body
+{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container-body::after
+{
+    content: '';
+    width: 100%;
+    height: 100%;
+    background-color: orange;
+    position: absolute;
+    z-index: -1;
+    clip-path: circle(40% at right 70%);
+}
+
+.container
+{
+    width: 80%;
+    height: 80vh;
+    border-radius: 15px;
+    
+    background-color: rgba(255  , 255, 255, 0.1);
+}
+header
+{
+    font-size: 1.2rem;
+    display: flex;
+    justify-content: space-around;
+    padding: 40px 15px;
+    width: 100%;
+    height:10% ;
+   
+}
+a{
+    text-decoration: none;
+    color: white;
+}
+.right-header
+{
+    font-size: 1.6rem;
+    font-weight: 600;
+    
+    margin-right: 7%;
+}
+.left-header a
+{
+    margin-right: 15px;
+}
+
+.content-area
+{
+    height: 90%;
+    width: 100%;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.content-text
+{
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+.content-text p 
+{
+    font-size: 1rem;
+    font-weight: 400;
+    
+}
+
+.content-text h3
+{
+    font-weight: 900;
+    font-size: 2rem;
+    margin: 35px;
+}
+
+.content-text button
+{
+    background-color: orange;
+    border-radius: 8px;
+    border: none;
+    padding: 10px 15px;
+    color: white;
+    cursor: pointer;
+}
+.content-text button:hover
+{
+    background-color: rgba(202, 125, 42, 0.436);
+}
+.content-img
+{
+    position: relative;
+    height: 90%;
+    width: 50%;
+}
+.content-img img
+{
+    position: absolute;
+    bottom: -1.8%;
+    width: 95%;
+}
