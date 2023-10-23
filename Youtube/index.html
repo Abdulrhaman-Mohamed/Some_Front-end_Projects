@@ -11,7 +11,7 @@
 <body>
     <header>
         <div class="right-section">
-            <i id="item" class="material-icons item">
+            <i id="item" class="material-icons item" onclick="openNav()">
                 menu
                 </i>
             <img src="images/youtube-logo.png" alt="Youtube Logo">
@@ -49,7 +49,15 @@
         
     </header>
     <div class="contain-area">
-            <aside>
+            <aside id="mySidepanel">
+                <div id="visible-header" class="right-section">
+                    <i id="item" class="material-icons item" onclick="closeNav()">
+                        menu
+                        </i>
+                    <img src="images/youtube-logo.png" alt="Youtube Logo">
+        
+        
+                </div>
                 <nav>
                 <a href=""class="nav-link active">
                     <i class="material-icons">
@@ -357,5 +365,20 @@
                 </div>
             </main>
     </div>
+
+    <script>
+        function openNav() {
+          document.getElementById("mySidepanel").style.width = "250px";
+          document.getElementById("mySidepanel").style.position = "absolute";
+          document.getElementById("mySidepanel").style.top = "0";
+          document.getElementById("visible-header").style.visibility="visible"
+          
+
+        }
+        
+        function closeNav() {
+          document.getElementById("mySidepanel").style.width = "0";
+        }
+        </script>
 </body>
 </html>
