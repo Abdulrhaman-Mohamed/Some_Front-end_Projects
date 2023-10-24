@@ -57,6 +57,10 @@ a{
     text-decoration: none;
     color: white;
 }
+a:hover
+{
+    color: orange;
+}
 .right-header
 {
     font-size: 1.6rem;
@@ -116,18 +120,18 @@ a{
 {
     background-color: rgba(202, 125, 42, 0.436);
 }
-.content-text .item-social
+ .item-social
 {
 margin: 8px 0 ;
     text-align: center;
     font-size: 2em;
 }
-.content-text .item-social a 
+ .item-social a 
 {
     
     margin-right: 8px;
 }
-.content-text .item-social a:hover
+ .item-social a:hover
 {
     color: orange;
 }
@@ -151,8 +155,7 @@ margin: 8px 0 ;
     color: black;
     min-height: 60vh;
 }
-
-.cards .title
+ .title
 {
 
     font-size: 3em;
@@ -171,6 +174,7 @@ margin: 8px 0 ;
 }
 .content .card
 {
+    font-size: 1.3rem;
     background-color: white;
     width: 21.25em;
     box-shadow: 0 5px 25px rgba(1 1 1 /15%);
@@ -208,6 +212,80 @@ margin: 8px 0 ;
     margin: 10px;
 }
 
+.content-project
+{
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.content-project .project-card
+{
+    font-size: 1.3rem;
+    background-color: white;
+    width: 600px;
+    box-shadow: 0 5px 25px rgba(1 1 1 /15%);
+    border-radius: 10px;
+    padding: 10px;
+    margin: 15px;
+    transition: 0.7s ease;
+    
+}
+.content-project .project-card:hover
+{
+    transform: scale(1.1);
+}
+
+.project-card .project-image
+{
+    width: 580px;
+}
+.project-image img
+{
+    width: 100%;
+}
+.project-info
+{
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+}
+.project-info p
+{
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 1;
+}
+footer
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 10px;
+    height: 10vh;
+}
+.Parag
+{
+    color: white;
+    font-size: 1.3em;
+}
+.Parag span
+{
+    font-weight: 600;
+    color: orange;
+}
+
+.project-info a
+{
+    color: black;
+    text-align: end;
+}
+.project-info a:hover
+{
+    color: orange;
+}
+
 @media (max-width:1200px) {
 
     header
@@ -220,6 +298,10 @@ margin: 8px 0 ;
     {
         margin-right: 0;
     }
+    .left-header a
+{
+    margin:0 6px;
+}
     .container-body::after
     {
         clip-path: circle(50% at bottom);
@@ -257,6 +339,25 @@ margin: 8px 0 ;
     {
         font-size: 0.8rem;
     }
+
+    .content .card
+    {
+        font-size: 1.3em;
+    }
+
+    .content-project .project-card
+    {
+        min-width:150px ;
+        font-size: 1.3em;
+    }
+.project-card .project-image
+{
+    width: 100%;
+}
+.project-image img
+{
+    width: 100%;
+}
 }
 
 @media (max-height:500px) {
