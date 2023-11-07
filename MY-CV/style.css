@@ -320,15 +320,15 @@ footer
     }
     .content-img
     {
-        height: 45%;
+        height: 100%;
         display: flex;
         justify-content: center;
         
     }
     .content-img img 
     {
-        height: auto;
-        width: 80%;
+        height: 100%;
+        width: auto;
         
     }
     .content-text h3
