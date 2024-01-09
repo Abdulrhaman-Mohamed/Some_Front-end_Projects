@@ -107,7 +107,7 @@ a:hover
     color: orange;
 }
 
-.content-text button
+.content-text > a
 {
     background-color: orange;
     border-radius: 8px;
@@ -116,7 +116,7 @@ a:hover
     color: white;
     cursor: pointer;
 }
-.content-text button:hover
+.content-text >a:hover
 {
     background-color: rgba(202, 125, 42, 0.436);
 }
@@ -171,6 +171,7 @@ margin: 8px 0 ;
     justify-content: center;
     flex-direction: row;
     flex-wrap: wrap;
+    padding: 0 0 1.5em;
 }
 .content .card
 {
@@ -218,13 +219,14 @@ margin: 8px 0 ;
     justify-content: center;
     flex-direction: row;
     flex-wrap: wrap;
+    padding: 0 0 1.5em;
 }
 
 .content-project .project-card
 {
     font-size: 1.3rem;
     background-color: white;
-    width: 600px;
+    width: 400px;
     box-shadow: 0 5px 25px rgba(1 1 1 /15%);
     border-radius: 10px;
     padding: 10px;
@@ -256,6 +258,21 @@ margin: 8px 0 ;
     display: -webkit-box;
     -webkit-box-orient: vertical;
     -webkit-line-clamp: 1;
+    display: block;
+}
+
+.project-card .card-links
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1em 0 ;
+}
+
+.project-card .card-links a
+{
+    padding: 0 1em ;
+    font-weight: bold;
 }
 footer
 {
